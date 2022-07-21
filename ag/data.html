@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>session : Login</title>
+    <style type="text/css">
+        label   {font-weight: bold}
+        legend  {font-style: italic}
+        fieldset{width: 400px; text-align: center; background-color:#FF69B4 ;}
+        body    {text-align: center}
+        button  {color:black; background: #1E90FF; width: 100px; height: 40px; }
+    </style> 
+</head>
+<body>
+ <?php if (isset($pesan_error)) echo $pesan_error; ?>
+ <div align="center">
+    
+    <form action ="index2.php" method="post">
+        <fieldset ><h2><b>input jadwal guru</b></h2></fieldset><br>
+        <br><fieldset>
+            <legend><b>Input Data Guru</b></legend>
+            <p><label for="no">No:</label>
+            <input type="text" size="20" nama="username"></p>
+            <p><label for="nama">Nama:</label>
+            <input type="text" size="20" name="Nama"></p>
+             <p><label for="KodeGuru">Kode Guru:</label>
+            <input type="text" size="20" name="kodeguru"></p>
+             <p><label for="nama">Mapel:</label>
+            <input type="text" size="20" name="mapel"></p>
+<div class="col-4">
+            <button type="submit" class="btn btn-primary btn-block"><b>kirim</b></button>
+          </div>    </fieldset>
+ </form>
+ </div>
+</body>
+</html>
